@@ -5,7 +5,7 @@ COLORS = ["red", "orange", "yellow", "green", "blue", "purple"]
 MOVE_INCREMENT = .75
 MOVE_SPEEDS = [1, 1.25, 1.5, 1.75, 2]
 
-
+# can use probability to create cars at defined rate
 class CarManager(Turtle):
 
     def __init__(self):
@@ -19,7 +19,7 @@ class CarManager(Turtle):
         self.forward(distance)
 
     def creation(self):
-        starting_y = r.randint(-300, 300)
+        starting_y = r.randint(-250, 250)
         self.penup()
         self.color(r.choice(COLORS))
         self.goto(350, starting_y)

@@ -47,7 +47,7 @@ while game:
             cars.append(c)
 
     for car in selected_cars:
-        if car.distance(p) <= 18:
+        if car.distance(p) <= 20:
             for vehicle in selected_cars:
                 vehicle.reset()
             p.game_over()
